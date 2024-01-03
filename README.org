@@ -9,7 +9,8 @@
 
 
 * Customizations
-  * Apply [[https://github.com/catppuccin/tmux][Catppuccin Theme for Tmux]]
+  - Apply [[https://github.com/catppuccin/tmux][Catppuccin Theme for Tmux]]
+  - Enabled mouse
 
 
 
