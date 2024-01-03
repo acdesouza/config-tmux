@@ -11,6 +11,8 @@
 * Customizations
   - Apply [[https://github.com/catppuccin/tmux][Catppuccin Theme for Tmux]]
   - Enabled mouse
+  - ~M-n~ :: Create new Window on current path
+  - ~M-c~ :: Close current Window
 
 
 
