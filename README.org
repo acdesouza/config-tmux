@@ -13,6 +13,8 @@
   - Enabled mouse
   - ~M-n~ :: Create new Window on current path
   - ~M-c~ :: Close current Window
+  - ~M-h~ :: Moves to the Window on the Left of Current Window, like in Vim
+  - ~M-l~ :: Moves to the Window on the Right of Current Window, like in Vim
 
 
 
