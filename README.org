@@ -15,6 +15,8 @@
   - ~M-c~ :: Close current Window
   - ~M-h~ :: Moves to the Window on the Left of Current Window, like in Vim
   - ~M-l~ :: Moves to the Window on the Right of Current Window, like in Vim
+  - ~<Prefix> -~ :: Splits the current Pane horizontally by creating one below
+  - ~<Prefix> |~ :: Splits the current Pane vertically by creating one on the right
 
 
 
