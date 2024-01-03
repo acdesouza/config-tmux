@@ -8,6 +8,11 @@
 
 
 
+* Customizations
+  * Apply [[https://github.com/catppuccin/tmux][Catppuccin Theme for Tmux]]
+
+
+
 * Personal Tmux Crash Course
 
   Tmux interface is build upon keybindings. Those keybindings are, generally, prefixed by the Prefix Key.
