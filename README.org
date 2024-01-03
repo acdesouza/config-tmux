@@ -21,6 +21,7 @@
   - ~C-j~ :: Move to the Pane ~Below~, like Vim
   - ~C-k~ :: Move to the Pane ~Above~, like Vim
   - ~C-l~ :: Move to the Pane on the ~Right~, like Vim
+  - Prevents Vim motion override. So, I can [[https://github.com/christoomey/vim-tmux-navigator#add-a-snippet][use C-hjkl on Vim AND on Tmux thanks tmux-vim-navigator]].
 
 
 
