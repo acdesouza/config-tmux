@@ -1,0 +1,81 @@
+* Tmux
+
+  Everything started on [[https://technotales.wordpress.com/2007/10/03/like-slime-for-vim/][attempt to replicate the Emacs + SLIME environment on VIM + GNU Screen]]. Four years after this text, [[https://github.com/jpalardy/vim-slime/commit/4d93425594c192b11a899512b883e0bd26eb7901][in 2011, Jonathan Palardy did the first commit on vim-slime]].
+
+  That's the reason why I started to learn Tmux.
+
+  The best place to start is the [[https://github.com/tmux/tmux/wiki/Getting-Started][Tmux Getting Started documentation]] and the [[https://tmuxcheatsheet.com][Tmux Cheat Sheet]].
+
+
+
+* Personal Tmux Crash Course
+
+  Tmux interface is build upon keybindings. Those keybindings are, generally, prefixed by the Prefix Key.
+
+  The default Prefix Key is ~C-b~. Meaning to press the ~Control~ and, without releasing it, press the ~b~ key. For now on I will refer the Prefix Key by ~<Prefix>~.
+
+  In order to know the current keybindings you can use the ~<Prefix> ?~. You close this panel using ~Enter~.
+
+  Alternativelly you can also use the Command Prompt to run Tmux commands. To access the Command Prompt use ~<Prefix> :~
+  
+
+
+* Concepts
+
+
+#+BEGIN_SRC
++------------------------------+ <-- Attached Session
+|+----------------------------+| <-- Current Window splitted into 4 Panes
+||       |      |      |      ||
+|| Pane  | Pane | Pane | Pane ||
+||       |      |      |      ||
+|+----------------------------+|
+| 1 | 2* | 3 |         | p | s | <-- Status Line showing: 
++------------------------------+    Attached ~Session~ has 3 ~Windows~
+                                    Current ~Window~ is the one with number 2
+                                    Current program on the active ~Pane~ is ~p~
+                                    Current ~Session~ name is ~s~
+#+END_SRC
+
+
+
+  Everytime you start Tmux you ~attach~ to a ~Session~. 
+  The ~Session~ is a container holding a group of one or more ~Windows~.
+  A ~Window~ can be splited into one or more ~Panes~.
+  A ~Pane~ is where your shell prompt waits for commands.
+
+  The first time you attach to a new ~Session~ it has one ~Window~ with one ~Pane~ showing the command prompt for the shell.
+
+
+** Navigation
+
+  Following I added the default keybindings for the common tasks to use Tmux.
+
+*** Sessions
+
+- ~tmux new -s session-name~: Create a new session outside Tmux
+- ~tmux attach~: Attach to the latest active session
+- ~tmux attach -t session-name~: Attach to a session
+- ~tmux ls~: List all Tmux sessions outside
+- ~<prefix> s~: Show all sessions inside Tmux
+- ~<prefix> w~: Show all sessions inside Tmux and each Window for those Sessions
+
+*** Windows
+
+- ~<prefix> c~: Create a new window
+- ~<prefix> &~: Close/Destroy a window
+- ~<prefix> <N>~: Jump to a window numberer as <N> as shown in the status bar
+- ~<prefix> p~: Move to the previous window
+- ~<prefix> n~: Move to the next window
+
+*** Panes
+
+- ~<prefix> %~: Split Window in 2 vertical panes
+- ~<prefix> "~: Split Window in 2 horizontal panes
+- ~<prefix> x~: Close a Panel
+- ~<prefix> Arrow Keys~: Move between Panes
+- ~<prefix> {~: Rearrange Panels rotating their position anti-clockwise
+- ~<prefix> }~: Rearrange Panels rotating their position clockwise
+- ~<prefix> z~: Zoom in(show only the active pane
+- ~<prefix> z~: Zoom out(show only the active pane
+- ~<prefix> !~: Move current Panel to a new Window
