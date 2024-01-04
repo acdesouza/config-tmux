@@ -22,6 +22,7 @@
   - ~C-k~ :: Move to the Pane ~Above~, like Vim
   - ~C-l~ :: Move to the Pane on the ~Right~, like Vim
   - Prevents Vim motion override. So, I can [[https://github.com/christoomey/vim-tmux-navigator#add-a-snippet][use C-hjkl on Vim AND on Tmux thanks tmux-vim-navigator]].
+  - ~<Prefix> k~ :: Clear screen and erase history. Bash uses Ctrl+l to invoke clear. [[https://man7.org/linux/man-pages/man1/clear.1.html][Terminal emulators with extended E3 capabilities can also erase history]]. But, since I'm using C-l to Pane navigation, I need a replacement.
 
 
 
@@ -34,7 +35,7 @@
   In order to know the current keybindings you can use the ~<Prefix> ?~. You close this panel using ~Enter~.
 
   Alternativelly you can also use the Command Prompt to run Tmux commands. To access the Command Prompt use ~<Prefix> :~
-  
+
 
 
 * Concepts
@@ -47,7 +48,7 @@
 || Pane  | Pane | Pane | Pane ||
 ||       |      |      |      ||
 |+----------------------------+|
-| 1 | 2* | 3 |         | p | s | <-- Status Line showing: 
+| 1 | 2* | 3 |         | p | s | <-- Status Line showing:
 +------------------------------+    Attached ~Session~ has 3 ~Windows~
                                     Current ~Window~ is the one with number 2
                                     Current program on the active ~Pane~ is ~p~
@@ -56,7 +57,7 @@
 
 
 
-  Everytime you start Tmux you ~attach~ to a ~Session~. 
+  Everytime you start Tmux you ~attach~ to a ~Session~.
   The ~Session~ is a container holding a group of one or more ~Windows~.
   A ~Window~ can be splited into one or more ~Panes~.
   A ~Pane~ is where your shell prompt waits for commands.
