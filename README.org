@@ -11,6 +11,8 @@
 * Customizations
   - Apply [[https://github.com/catppuccin/tmux][Catppuccin Theme for Tmux]]
   - Enabled mouse
+  - Start the Window/Pane numbers in 1, instead of 0.
+  - After adding or closing Windows and Panes they'll renumbered. To avoid 1, 3, 5, 9 Window numbers
   - ~M-n~ :: Create new Window on current path
   - ~M-c~ :: Close current Window
   - ~M-h~ :: Moves to the Window on the Left of Current Window, like in Vim
