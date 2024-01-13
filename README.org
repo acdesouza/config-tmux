@@ -6,6 +6,17 @@
 
   The best place to start is the [[https://github.com/tmux/tmux/wiki/Getting-Started][Tmux Getting Started documentation]] and the [[https://tmuxcheatsheet.com][Tmux Cheat Sheet]].
 
+* Instalation
+
+  #+begin_src bash
+  $ mkdir ~/.config/
+  $ cd ~/.config/
+  $ git clone https://github.com/acdesouza/config-tmux ~/.config/tmux
+  $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  $ tmux 
+  #+end_src
+
+  You'll need to ~<Prefix> I~ to initiate TPM.
 
 
 * Customizations
