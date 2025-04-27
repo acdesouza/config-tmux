@@ -6,6 +6,24 @@
 
   The best place to start is the [[https://github.com/tmux/tmux/wiki/Getting-Started][Tmux Getting Started documentation]] and the [[https://tmuxcheatsheet.com][Tmux Cheat Sheet]].
 
+** Screenshot
+
+   #+CAPTION: Tmux screenshot following current config
+   #+NAME:   fig:screenshot
+   #+ATTR_HTML: :align center
+   [[./screenshot.png]]
+
+   - Tabs
+     - Numbers starting at 1
+     - Numbers on the left
+     - [[https://man.openbsd.org/OpenBSD-current/man1/tmux.1#window_name][Window name]] Current app or window name
+     - Window flags(current, last, and zoom) as icons
+   - Left status empty
+   - Right status:
+     - current application running
+     - current session name
+
+
 * Instalation
 
   #+begin_src bash
@@ -13,7 +31,7 @@
   $ cd ~/.config/
   $ git clone https://github.com/acdesouza/config-tmux ~/.config/tmux
   $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  $ tmux 
+  $ tmux
   #+end_src
 
   You'll need to ~<Prefix> I~ to initiate TPM.
